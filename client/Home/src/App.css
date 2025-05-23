@@ -1,0 +1,67 @@
+.App {
+  background-color: #0F131C;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: calc(10px + 2vmin);
+  color: #D5D5D6;
+}
+
+button{
+  width: 25vw;
+  background-color: #4B7CFE;
+  color: #C1D0FD;
+  cursor: pointer;
+}
+
+.Toastify__toast {
+  border-radius: 12px;
+  font-size: 1rem;
+  min-width: 300px;
+  padding-right: 2.5em;
+  position: relative; /* Needed for absolute positioning of close button */
+}
+
+.Toastify__toast--success {
+  background: #222c36;
+  color: #fff;
+}
+
+.Toastify__close-button {
+  color: #fff !important;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 15px;
+}
+
+/* Green X for success toasts */
+.Toastify__toast--success .Toastify__close-button {
+  color: #4caf50 !important;
+}
+
+/* Red X for error toasts */
+.Toastify__toast--error .Toastify__close-button {
+  color: #ff3333 !important;
+}
+
+/* Progress bar colors */
+.Toastify__progress-bar {
+  background: #4caf50;
+}
+.Toastify__toast--error .Toastify__progress-bar {
+  background: #ff3333 !important;
+}
